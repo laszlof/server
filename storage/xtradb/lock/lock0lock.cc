@@ -2409,7 +2409,7 @@ lock_rec_add_to_queue(
 				if (wsrep_debug) {
 					fprintf(stderr,
 						"BF skipping wait: %lu\n",
-						trx->id);
+						(ulong) trx->id);
 					lock_rec_print(stderr, lock);
 				}
 		  } else
