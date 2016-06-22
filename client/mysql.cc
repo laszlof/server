@@ -1323,7 +1323,7 @@ sig_handler mysql_end(int sig)
 
 #endif
   if (sig >= 0)
-    put_info(sig ? "Aborted" : "Bye", INFO_RESULT);
+    put_info(sig ? "Aborted" : "Bye Felicia", INFO_RESULT);
   glob_buffer.free();
   old_buffer.free();
   processed_prompt.free();
